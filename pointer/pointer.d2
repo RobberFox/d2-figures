@@ -1,0 +1,42 @@
+style.fill: "transparent"
+classes: {
+  other: {
+    label: "..."
+    style: {
+      fill: transparent
+      stroke-width: 0
+    }
+  }
+  empty: {
+    label: " "
+    style: {
+      fill: transparent
+      stroke-width: 0
+    }
+  }
+  text: {
+    style: {
+      fill: transparent
+      stroke-width: 0
+    }
+  }
+}
+
+cluster: "Memory Addresses" {
+  label.near: outside-top-center
+  style.fill: transparent
+  style.stroke-dash: 3
+
+  grid-rows: 1
+  grid-gap: 0
+
+  empty1.class: other
+  Pointer
+  empty2.class: empty
+  n.class: other
+  empty3.class: empty
+  Char
+  empty4.class: other
+
+  "Pointer" -> n -> "Char"
+}

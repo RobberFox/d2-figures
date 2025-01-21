@@ -1,0 +1,89 @@
+style.fill: "transparent"
+
+cluster: "General-purpose Registers" {
+  label.near: outside-top-center
+  style.fill: transparent
+  style.stroke-dash: 3
+
+  grid-rows: 1
+  grid-gap: 8
+
+  style.fill: "transparent"
+  eax: {
+    label.near: outside-top-center
+    grid-rows: 1
+    grid-gap: 0
+
+    ax.width: 50
+    ah.width: 25
+    al.width: 25
+  }
+  ebx: {
+    label.near: outside-top-center
+    grid-rows: 1
+    grid-gap: 0
+
+    bx.width: 50
+    bh.width: 25
+    bl.width: 25
+  }
+  ecx: {
+    label.near: outside-top-center
+    grid-rows: 1
+    grid-gap: 0
+
+    cx.width: 50
+    ch.width: 25
+    cl.width: 25
+  }
+  edx: {
+    label.near: outside-top-center
+    grid-rows: 1
+    grid-gap: 0
+
+    dx.width: 50
+    dh.width: 25
+    dl.width: 25
+  }
+  esi.width: 100
+  edi.width: 100
+}
+
+grid-rows: 1
+grid-gap: 0
+
+Size: {
+  near: bottom-center
+
+  label.near: outside-top-center
+  style.fill: transparent
+  style.stroke-dash: 3
+
+  grid-rows: 1
+  grid-gap: 8
+
+  ax: {
+    label.near: outside-top-center
+
+    grid-rows: 1
+    grid-gap: 0
+
+    16-bits.width: 200
+  }
+  ah: {
+    label.near: outside-top-center
+
+    grid-rows: 1
+    grid-gap: 0
+
+    8-bits.width: 100
+  }
+  al: {
+    label.near: outside-top-center
+
+    grid-rows: 1
+    grid-gap: 0
+
+    8-bits.width: 100
+  }
+}
