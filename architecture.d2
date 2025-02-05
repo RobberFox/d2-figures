@@ -1,0 +1,36 @@
+style.fill: "transparent"
+
+classes: {
+  empty: {
+    label: ""
+    height: 50
+    style: {
+      fill: "transparent"
+      stroke-width: 0
+    }
+  }
+}
+
+grid-rows: 4
+grid-columns: 3
+
+1.class: empty
+2: "Предприятие"
+3.class: empty
+4.class: empty
+5: "Производство"
+6: "Управления"
+7: "Цех"
+8: "Обслуживающий цех"
+9: "Вспомогательный цех"
+10.class: empty
+11.class: empty
+12: "Электричество\nВода"
+
+2 -> 5
+2 -> 6
+
+5 -> 7
+5 -> 8
+5 -> 9
+9 -> 12
