@@ -1,0 +1,78 @@
+direction: right
+style.fill: "transparent"
+
+classes: {
+  box: {
+    label.near: top-left
+    style: {
+      border-radius: 10
+    }
+  }
+
+  empty: {
+    label: ""
+    style: {
+      fill: transparent
+      stroke-width: 0
+    }
+  }
+}
+
+user: {
+  shape: person
+}
+
+AR: "Agent Runtime" {
+  class: box
+  grid-columns: 2
+  grid-gap: 0
+
+  column: {
+    class: empty
+    grid-columns: 2
+    grid-gap: 0
+    horizontal-gap: 20
+
+    row-1: {
+      class: empty
+      grid-rows: 2
+      grid-gap: 0
+      vertical-gap: 20
+
+      Orchestration: {
+        class: box
+        grid-rows: 3
+        grid-gap: 20
+
+        1: "Profile, goals & instructions" {
+          style.border-radius: 10
+        }
+        2: "Memory: short-term, long-term" {
+          style.border-radius: 10
+        }
+        3: "Model based Reasoning/Planning" {
+          style.border-radius: 10
+        }
+      }
+
+      Model: {
+        class: box
+      }
+    }
+
+    row-2: {
+      class: empty
+      grid-rows: 2
+      grid-gap: 0
+      vertical-gap: 20
+
+      Tools: {
+        class: box
+        height: 380
+      }
+    }
+  }
+}
+
+user -> AR: "user_query"
+AR -> user: "agent_response"
